@@ -1,0 +1,45 @@
+{
+  "name": "grunt-orgy-backtrace",
+  "description": "Async backtrace file name, line number support for orgy-js.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/tecfu/grunt-orgy-backtrace",
+  "author": {
+    "name": "tecfu",
+    "email": "help@tecfu.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tecfu/grunt-orgy-backtrace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tecfu/grunt-orgy-backtrace/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/tecfu/grunt-orgy-backtrace/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.12.2"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "falafel": "^1.0.1",
+    "glob": "^5.0.5"
+  }
+}
