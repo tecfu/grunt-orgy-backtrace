@@ -8,17 +8,16 @@
 
 'use strict';
 
+var path = require("path");
+var sp = path.resolve(__dirname + '/../src/main.js');
+var main = require(sp);
+
 module.exports = function(grunt) {
 
 	// Please see the Grunt documentation for more information regarding task
 	// creation: http://gruntjs.com/creating-tasks
 
 	grunt.registerMultiTask('orgy_backtrace', 'Filename, line number backtrace support for orgy-js.', function() {
-		// Merge task-specific and/or target-specific options with these defaults.
-		var options = this.options({
-			punctuation: '.',
-			separator: ', '
-		});
 
 		// Iterate over all specified file groups.
 		this.files.forEach(function(f) {
@@ -33,9 +32,7 @@ module.exports = function(grunt) {
 				}
 			});
 
-			var main = require('./../src/main.js');
-			main([f]);
+			main(src);
 		});
 	});
-
 };
